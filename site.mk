@@ -41,6 +41,10 @@ ifeq "$(GLUON_TARGET)" "mpc85xx-generic"
 ADD_WIFI_PKGS = yes
 endif
 
+ifeq "$(GLUON_TARGET)" "ipq806x"
+ADD_WIFI_PKGS = yes
+endif
+
 ifeq "$(ADD_WIFI_PKGS)" "yes"
 GLUON_SITE_PACKAGES += \
 	gluon-web-wifi-config \
