@@ -98,7 +98,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := v2017.1.4
+DEFAULT_GLUON_RELEASE := v2017.1.5-c2600
 
 ##	GLUON_RELEASE
 #		call make with custom GLUON_RELEASE flag, to use your own release version scheme.
@@ -108,7 +108,7 @@ DEFAULT_GLUON_RELEASE := v2017.1.4
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+GLUON_RELEASE ?= c2600
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
