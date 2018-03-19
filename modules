@@ -1,11 +1,12 @@
-GLUON_SITE_FEEDS="ssidchanger switchconfig"
+GLUON_SITE_FEEDS="ssidchanger"
+# switchconfig
 
 PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-nord/gluon-ssid-changer.git
 # set the newest commit ID here
 PACKAGES_SSIDCHANGER_COMMIT=4960ba592ffd78ba36a66a82b81e6f49dd9b54ec
 PACKAGES_SSIDCHANGER_BRANCH=2018.1.x
 
-PACKAGES_SWITCHCONFIG_REPO=https://github.com/freifunk-ffm/packages.git
+#PACKAGES_SWITCHCONFIG_REPO=https://github.com/freifunk-ffm/packages.git
 # set the newest commit ID here
-PACKAGES_SWITCHCONFIG_COMMIT=af9cdef8beca39fea49ef4ffa3fa99b5ca489cfd
-PACKAGES_SWITCHCONFIG_PATH=/ffffm-luci-switchconfig
+#PACKAGES_SWITCHCONFIG_COMMIT=af9cdef8beca39fea49ef4ffa3fa99b5ca489cfd
+#PACKAGES_SWITCHCONFIG_PATH=/ffffm-luci-switchconfig

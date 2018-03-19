@@ -118,3 +118,5 @@ GLUON_LANGS ?= de en fr
 
 # Turn on building for ATH10K Devices by specifying mesh type
 GLUON_ATH10K_MESH ?= 11s
+# starting with 2017.1.5
+GLUON_WLAN_MESH ?= 11s
