@@ -1,5 +1,10 @@
-GLUON_SITE_FEEDS="ssidchanger"
+GLUON_SITE_FEEDS='gluon_ssid_changer ffffm_packages'
 
-PACKAGES_SSIDCHANGER_REPO=git://github.com/ffac/gluon-ssid-changer.git
-PACKAGES_SSIDCHANGER_COMMIT=dfb9063787b94e246e72a330f6a221e391495b4b
-PACKAGES_SSIDCHANGER_BRANCH=chaos-calmer
+PACKAGES_GLUON_SSID_CHANGER_REPO=https://github.com/FreifunkVogtland/gluon-ssid-changer.git
+PACKAGES_GLUON_SSID_CHANGER_COMMIT=7de5b160dd688003750bb8b2411024d5a4b7c2ca
+
+PACKAGES_FFFFM_PACKAGES_REPO=https://github.com/FreifunkVogtland/ffffm-packages.git
+PACKAGES_FFFFM_PACKAGES_COMMIT=88b6e147687945ec7c9a87a589b8c7d50c496ff9
+
+#PACKAGES_FFM_REPO=https://github.com/freifunkks/ffm-packages.git
+#PACKAGES_FFM_COMMIT=af9cdef8beca39fea49ef4ffa3fa99b5ca489cfd

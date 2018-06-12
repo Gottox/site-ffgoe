@@ -14,12 +14,12 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-contact-info \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-network \
+	gluon-web-private-wifi \
 	gluon-mesh-batman-adv-15 \
 	gluon-mesh-vpn-fastd \
-	gluon-next-node \
 	gluon-radvd \
 	gluon-respondd \
 	gluon-setup-mode \
@@ -43,14 +43,15 @@ endif
 
 ifeq "$(ADD_WIFI_PKGS)" "yes"
 GLUON_SITE_PACKAGES += \
-	gluon-luci-wifi-config \
-	gluon-ssid-changer
+	gluon-web-wifi-config \
+	gluon-ssid-changer \
+	ffffm-additional-wifi-json-info
 endif
 
 # RaspberryPi Model 1B
 ifeq ($(GLUON_TARGET),brcm2708-bcm2708)
 GLUON_SITE_PACKAGES += \
-	gluon-luci-wifi-config \
+	gluon-web-wifi-config \
 	gluon-ssid-changer \
 	iw \
 	kmod-ath \
@@ -114,3 +115,7 @@ GLUON_LANGS ?= de en fr
 
 # Turn on building for ATH10K Devices by specifying mesh type
 GLUON_ATH10K_MESH ?= 11s
+
+# Print the default release (for external scripts)
+print_default_release:
+	@echo $(DEFAULT_GLUON_RELEASE)
