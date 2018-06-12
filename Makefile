@@ -2,6 +2,7 @@ include site.mk
 
 GLUON_BUILD_DIR := gluon-build
 GLUON_GIT_URL := https://github.com/freifunk-gluon/gluon
+GLUON_RELEASE := ${DEFAULT_GLUON_RELEASE}-$(shell date +%Y%m%d-%H%M)
 
 JOBS ?= $(shell cat /proc/cpuinfo | grep processor | wc -l)
 
@@ -15,12 +16,12 @@ clean:
 
 info:
 	@echo '##########################################'
-	@echo '## Building gluon release ${GLUON_RELEASE}	##'
+	@echo '## Building gluon release ${DEFAULT_GLUON_RELEASE}	as ${GLUON_RELEASE}##'
 	@echo '##########################################'
 
 update:
 ifeq "$(wildcard ${GLUON_BUILD_DIR} )" ""
-	git clone ${GLUON_GIT_URL} ${GLUON_BUILD_DIR} -b ${GLUON_RELEASE};
+	git clone ${GLUON_GIT_URL} ${GLUON_BUILD_DIR} -b ${DEFAULT_GLUON_RELEASE};
 else
 	cd ${GLUON_BUILD_DIR}
 	git --git-dir=${GLUON_BUILD_DIR}/.git pull
