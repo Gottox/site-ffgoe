@@ -40,11 +40,3 @@ x86-generic:
   artifacts:
     paths:
       - gluon-build/output
-
-x86-kvm_guest:
-  stage: build
-  script:
-    - make GLUON_TARGET=x86-kvm_guest
-  artifacts:
-    paths:
-      - gluon-build/output
