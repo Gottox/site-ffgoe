@@ -9,6 +9,14 @@ ar71xx-generic:
     paths:
       - gluon-build/output
 
+ar71xx-tiny:
+  stage: build
+  script:
+    - make GLUON_TARGET=ar71xx-tiny
+  artifacts:
+    paths:
+      - gluon-build/output
+
 ar71xx-nand:
   stage: build
   script:
