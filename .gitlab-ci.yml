@@ -1,7 +1,4 @@
-image: gcc
-
-before_script:
-   - apt-get update -qq && apt-get install -y -qq gawk unzip
+image: dariksde/gcc-freifunkks:latest
 
 # sadly gitlabci is missing a build matrix :(
 ar71xx-generic:

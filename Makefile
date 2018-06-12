@@ -16,7 +16,7 @@ clean:
 
 info:
 	@echo '##########################################'
-	@echo '## Building gluon release ${DEFAULT_GLUON_RELEASE}	as ${GLUON_RELEASE}##'
+	@echo '## Building gluon release ${DEFAULT_GLUON_RELEASE} as ${GLUON_RELEASE}##'
 	@echo '##########################################'
 
 update:
