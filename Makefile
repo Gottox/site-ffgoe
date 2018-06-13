@@ -32,4 +32,4 @@ prepare: update
 	${MAKE} -C ${GLUON_BUILD_DIR} update
 build: clean-output prepare
 	@echo 'starting build...'
-	${MAKE} -j ${JOBS} -C ${GLUON_BUILD_DIR} GLUON_RELEASE=${GLUON_VERSION}FORCE_UNSAFE_CONFIGURE=1 BROKEN=1
+	${MAKE} -j ${JOBS} -C ${GLUON_BUILD_DIR} GLUON_RELEASE=${GLUON_VERSION} FORCE_UNSAFE_CONFIGURE=1 BROKEN=1
