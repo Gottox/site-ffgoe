@@ -6,7 +6,6 @@
 
 GLUON_SITE_PACKAGES := \
 	gluon-autoupdater \
-	gluon-config-mode-core \
 	gluon-config-mode-hostname \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-mesh-vpn \
@@ -22,7 +21,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-respondd \
-	gluon-setup-mode \
 	gluon-status-page \
 	haveged \
 	iwinfo \
@@ -95,7 +93,7 @@ endif
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := v2017.1.8
+DEFAULT_GLUON_RELEASE := v2018.1
 
 ##	GLUON_RELEASE
 #		call make with custom GLUON_RELEASE flag, to use your own release version scheme.
