@@ -1,15 +1,11 @@
-GLUON_SITE_FEEDS='ssidchanger ffffm_packages'
+GLUON_SITE_FEEDS='ffrl_packages ffddorf'
 
-#PACKAGES_GLUON_SSID_CHANGER_REPO=https://github.com/FreifunkVogtland/gluon-ssid-changer.git
-#PACKAGES_GLUON_SSID_CHANGER_COMMIT=7de5b160dd688003750bb8b2411024d5a4b7c2ca
+#FFRL Packages
+PACKAGES_FFRL_PACKAGES_REPO=https://github.com/ffrl/ffrl-packages.git
+PACKAGES_FFRL_PACKAGES_COMMIT=464fa9c1f3190a7e6d82dba1adac1d5e9f8d1835
+PACKAGES_FFRL_PACKAGES_BRANCH=Branch_v2017.x
 
-PACKAGES_SSIDCHANGER_REPO=https://github.com/freifunk-nord/gluon-ssid-changer.git
-PACKAGES_SSIDCHANGER_COMMIT=b65f0a943806c67017a7aae3baca4d6a7172123e
-PACKAGES_SSIDCHANGER_BRANCH=2018.1.x
-
-PACKAGES_FFFFM_PACKAGES_REPO=https://github.com/FreifunkVogtland/ffffm-packages.git
-PACKAGES_FFFFM_PACKAGES_COMMIT=365e4821f92379723309bac58c48625ed19140d7
-PACKAGES_FFFFM_BRANCH=ffv
-
-#PACKAGES_FFM_REPO=https://github.com/freifunk-ffm/packages.git
-#PACKAGES_FFM_COMMIT=5ff4d95346df436d23196d30abfda2a0ecec0b7a
+#FFDORF Packages
+PACKAGES_FFDDORF_REPO=https://github.com/ffddorf/ddorf-packages.git
+PACKAGES_FFDDORF_COMMIT=7414b01369cfcba3bb588da64358071df94b1113
+PACKAGES_FFDDORF_BRANCH=Branch_v2018.x
