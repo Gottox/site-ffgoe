@@ -1,6 +1,5 @@
 GLUON_FEATURES := \
 	autoupdater \
-	alfred \
 	config-mode-domain-select \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
@@ -71,7 +70,7 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
 
-GLUON_LANGS ?= en de
+GLUON_LANGS ?= en de fr
 
 GLUON_ATH10K_MESH ?= 11s
 
